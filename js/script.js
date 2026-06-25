@@ -101,8 +101,8 @@ async function fetchQuestions(){
 
     try{
 
-        let url=
-        `http://localhost:5000/api/quiz?limit=${amount.value}`;
+        let url =
+    `https://quiz-hs-project-api.onrender.com/api/quiz?limit=${amount.value}`;
 
         if(category.value!="")
         url+=`&category=${category.value}`;
