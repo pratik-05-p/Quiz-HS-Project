@@ -5,7 +5,7 @@
 <h1 align="center">🎯 Quiz Master</h1>
 
 <p align="center">
-A modern, responsive <b>full-stack technical quiz platform</b> built using HTML, CSS, JavaScript, Node.js, Express.js, and QuizAPI.
+  A modern, responsive full-stack technical quiz platform built with HTML, CSS, JavaScript, Node.js, Express.js, and QuizAPI.
 </p>
 
 <p align="center">
@@ -18,13 +18,29 @@ A modern, responsive <b>full-stack technical quiz platform</b> built using HTML,
 
 </p>
 
+<p align="center">
+
+<a href="https://pratik-05-p.github.io/Quiz-HS-Project/">
+<img src="https://img.shields.io/badge/🚀%20Live%20Application-GitHub%20Pages-blue?style=for-the-badge">
+</a>
+
+<a href="https://quiz-hs-project-api.onrender.com">
+<img src="https://img.shields.io/badge/⚙️%20Backend%20API-Render-success?style=for-the-badge">
+</a>
+
+<a href="https://github.com/pratik-05-p/Quiz-HS-Project">
+<img src="https://img.shields.io/badge/📂%20Source%20Code-GitHub-black?style=for-the-badge">
+</a>
+
+</p>
+
 ---
 
-# 🔗 Project Links
+# 📌 Project Links
 
 ### 📂 GitHub Repository
 
-**Repository Source Code**
+**Source Code**
 
 https://github.com/pratik-05-p/Quiz-HS-Project
 
@@ -40,7 +56,7 @@ https://pratik-05-p.github.io/Quiz-HS-Project/
 
 ### ⚙️ Backend Deployment
 
-**Render API**
+**Render**
 
 https://quiz-hs-project-api.onrender.com
 
@@ -48,11 +64,11 @@ https://quiz-hs-project-api.onrender.com
 
 # 📖 Project Overview
 
-Quiz Master is a modern full-stack technical quiz application that enables users to test their programming knowledge through dynamically generated questions fetched securely using QuizAPI.
+Quiz Master is a full-stack technical quiz application that enables users to practice programming-related questions through a modern and responsive web interface.
 
-Instead of exposing the QuizAPI key to the client, the application uses a custom Express.js backend that securely communicates with QuizAPI and delivers questions to the frontend.
+To improve security, the frontend never communicates directly with QuizAPI. Instead, requests are routed through a custom Node.js and Express.js backend, which securely manages API communication before returning data to the client.
 
-The application provides an intuitive and responsive interface supporting multiple quiz categories, difficulty levels, score tracking, answer explanations, and seamless user interaction across desktop and mobile devices.
+The application offers category selection, difficulty filtering, real-time score calculation, answer explanations, and a responsive interface that works across desktop and mobile devices.
 
 ---
 
@@ -64,27 +80,51 @@ The application provides an intuitive and responsive interface supporting multip
 - 🧠 Real-time score calculation
 - ✅ Instant answer validation
 - 💡 Answer explanations
-- 📱 Fully responsive design
-- 🌙 Modern dark-themed UI
-- 🔒 Secure backend using Express.js
+- 📱 Responsive UI
+- 🌙 Modern dark interface
+- 🔒 Secure backend architecture
 - 🚀 Separate frontend and backend deployment
 
 ---
 
-# 🛠 Tech Stack
+# 🏗️ System Architecture
 
-| Technology | Purpose |
-|------------|----------|
-| HTML5 | Structure |
-| CSS3 | Styling |
-| JavaScript | Frontend Logic |
-| Node.js | Backend Runtime |
-| Express.js | REST API |
-| QuizAPI | Quiz Question Provider |
-| GitHub Pages | Frontend Hosting |
-| Render | Backend Hosting |
-| Git | Version Control |
-| GitHub | Source Code Management |
+```text
+                User
+                  │
+                  ▼
+     GitHub Pages (Frontend)
+                  │
+            Fetch Requests
+                  │
+                  ▼
+      Express.js Backend (Render)
+                  │
+          Secure API Request
+                  │
+                  ▼
+               QuizAPI
+                  │
+                  ▼
+        Quiz Data Returned
+                  │
+                  ▼
+             Frontend UI
+```
+
+---
+
+# 🛠️ Technology Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Frontend | HTML5, CSS3, JavaScript |
+| Backend | Node.js, Express.js |
+| API | QuizAPI |
+| Hosting | GitHub Pages |
+| Backend Hosting | Render |
+| Version Control | Git |
+| Repository | GitHub |
 
 ---
 
@@ -106,7 +146,6 @@ Quiz-HS-Project
 ├── server
 │   ├── routes
 │   │   └── quiz.js
-│   │
 │   ├── server.js
 │   ├── package.json
 │   ├── package-lock.json
@@ -119,80 +158,13 @@ Quiz-HS-Project
 
 ---
 
-# ⚙️ Installation
-
-## Clone the Repository
-
-```bash
-git clone https://github.com/pratik-05-p/Quiz-HS-Project.git
-```
-
----
-
-## Navigate to Server Directory
-
-```bash
-cd Quiz-HS-Project/server
-```
-
----
-
-## Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-## Configure Environment Variables
-
-Create a `.env` file inside the `server` directory.
-
-```env
-QUIZ_API_KEY=YOUR_API_KEY
-```
-
----
-
-## Run the Server
-
-```bash
-npm start
-```
-
----
-
-Open the application locally:
-
-```
-http://localhost:5000
-```
-
----
-
-# 📸 Screenshots
-
-### 🏠 Home Page
-
-*(Add Home Page screenshot here.)*
-
-### ❓ Quiz Interface
-
-*(Add Quiz Interface screenshot here.)*
-
-### 🏆 Result Screen
-
-*(Add Result Screen screenshot here.)*
-
----
-
 # 🚀 Deployment
 
 | Component | Platform |
 |-----------|----------|
 | Frontend | GitHub Pages |
-| Backend API | Render |
+| Backend | Render |
+| API Provider | QuizAPI |
 
 ---
 
@@ -214,10 +186,12 @@ https://www.linkedin.com/in/pratikdas-05-p/
 
 If you found this project useful, please consider giving it a ⭐ on GitHub.
 
-Your support motivates me to build more open-source projects.
+Your support is greatly appreciated.
 
 ---
 
 <p align="center">
+
 Made with ❤️ by <b>Pratik Das</b>
+
 </p>
