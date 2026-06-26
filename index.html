@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz HS Project</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <div class="app-container">
-
-        <!-- ===========================
-             START SCREEN
-        ============================ -->
-
         <div id="start-screen">
-
             <h1>🧠 Quiz Master</h1>
-
             <p class="subtitle">
                 Test your knowledge with exciting technical quiz questions!
             </p>
-
-            <!-- Category -->
-
             <div class="form-group">
-
                 <label for="category">Category</label>
-
                 <select id="category">
-
                     <option value="">Any Category</option>
-
                     <option value="Code">Programming</option>
                     <option value="Linux">Linux</option>
                     <option value="HTML">HTML</option>
@@ -45,165 +27,94 @@
                     <option value="Kubernetes">Kubernetes</option>
                     <option value="PHP">PHP</option>
                     <option value="Laravel">Laravel</option>
-
                 </select>
-
             </div>
-
-            <!-- Difficulty -->
-
             <div class="form-group">
-
                 <label for="difficulty">Difficulty</label>
-
                 <select id="difficulty">
-
                     <option value="">Any Difficulty</option>
                     <option value="Easy">Easy</option>
                     <option value="Medium">Medium</option>
                     <option value="Hard">Hard</option>
-
                 </select>
-
             </div>
-
-            <!-- Amount -->
-
             <div class="form-group">
-
                 <label for="amount">Number of Questions</label>
-
                 <select id="amount">
-
                     <option value="5">5 Questions</option>
                     <option value="10" selected>10 Questions</option>
                     <option value="15">15 Questions</option>
                     <option value="20">20 Questions</option>
-
                 </select>
-
             </div>
-
             <button id="start-btn">
                 🚀 Start Quiz
             </button>
-
         </div>
-
-        <!-- ===========================
-             QUIZ SCREEN
-        ============================ -->
-
         <div id="quiz-screen" style="display:none;">
-
             <div class="quiz-info">
-
                 <span>
                     Question
                     <span id="current-question">1</span>
                     /
                     <span id="total-question">10</span>
                 </span>
-
                 <span id="score">
                     Score : 0
                 </span>
-
             </div>
-
             <div class="progress-container">
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
-
             <div class="timer">
-
                 ⏳ Time Left :
                 <span id="time">30</span>s
-
             </div>
-
             <div class="question-box">
-
                 <h2 id="question">
                     Question will appear here...
                 </h2>
-
             </div>
-
             <div id="answer-buttons">
-
-                <!-- Buttons created by JavaScript -->
-
             </div>
-
             <button id="next-btn" style="display:none;">
-
                 Next Question →
-
             </button>
-
         </div>
-
-        <!-- ===========================
-             RESULT SCREEN
-        ============================ -->
-
         <div id="result-screen" style="display:none;">
-
             <h1>🏆 Quiz Completed!</h1>
-
             <div class="result-card">
-
                 <p>Final Score</p>
-
                 <h2 id="final-score">
                     0
                 </h2>
-
                 <div class="result-details">
-
                     <div>
                         <span>Total Questions</span>
                         <strong id="result-total">10</strong>
                     </div>
-
                     <div>
                         <span>Correct Answers</span>
                         <strong id="result-correct">0</strong>
                     </div>
-
                     <div>
                         <span>Incorrect Answers</span>
                         <strong id="result-wrong">0</strong>
                     </div>
-
                     <div>
                         <span>Percentage</span>
                         <strong id="result-percent">0%</strong>
                     </div>
-
                 </div>
-
                 <h3 id="performance-message">
-
                     Excellent 🎉
-
                 </h3>
-
                 <button id="restart-btn">
-
                     🔄 Play Again
-
                 </button>
-
             </div>
-
         </div>
-
     </div>
-
     <script src="js/script.js"></script>
-
 </body>
-
 </html>
